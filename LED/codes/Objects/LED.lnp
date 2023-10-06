@@ -1,0 +1,11 @@
+".\Objects\STARTUP.obj",
+".\Objects\main.obj",
+".\Objects\LCD1602.obj",
+".\Objects\delay.obj",
+".\Objects\uart.obj",
+".\Objects\timer.obj",
+".\Objects\iic.obj",
+".\Objects\AT24C02.obj",
+".\Objects\adc0809.obj" 
+TO ".\Objects\LED" 
+PRINT(".\Listings\LED.m51") RAMSIZE(256) 

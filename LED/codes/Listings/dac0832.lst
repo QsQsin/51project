@@ -1,0 +1,27 @@
+C51 COMPILER V9.59.0.0   DAC0832                                                           10/05/2023 21:52:19 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE DAC0832
+OBJECT MODULE PLACED IN .\Objects\dac0832.obj
+COMPILER INVOKED BY: D:\Soft\Keil_C51\keil_v5\C51\BIN\C51.EXE dac0832.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRIN
+                    -T(.\Listings\dac0832.lst) TABS(2) OBJECT(.\Objects\dac0832.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          
+   3           
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   ----    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

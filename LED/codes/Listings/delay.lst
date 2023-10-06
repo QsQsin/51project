@@ -1,0 +1,41 @@
+C51 COMPILER V9.59.0.0   DELAY                                                             10/02/2023 16:57:34 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE DELAY
+OBJECT MODULE PLACED IN .\Objects\delay.obj
+COMPILER INVOKED BY: D:\Soft\Keil_C51\keil_v5\C51\BIN\C51.EXE delay.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(
+                    -.\Listings\delay.lst) TABS(2) OBJECT(.\Objects\delay.obj)
+
+line level    source
+
+   1          #include <intrins.h>
+   2          //调用_nop_函数
+   3          
+   4          
+   5          /**
+   6            * @brief  以毫秒为单位的延时函数，8051：12MHz,1个机器周期(nop)=12个振荡周期
+   7            * @param  number_of_ms 延时多少毫秒
+   8            * @retval 无
+   9            */
+  10          void delay_ms(int number_of_ms){
+  11   1        int i,j;
+  12   1        for(i=0;i<number_of_ms;i++){
+  13   2          for(j=0;j<1000;j++){
+  14   3            _nop_();
+  15   3          }
+  16   2        }
+  17   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     39    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,49 @@
+C51 COMPILER V9.59.0.0   ADC0809                                                           10/06/2023 12:05:49 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE ADC0809
+OBJECT MODULE PLACED IN .\Objects\adc0809.obj
+COMPILER INVOKED BY: D:\Soft\Keil_C51\keil_v5\C51\BIN\C51.EXE adc0809.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRIN
+                    -T(.\Listings\adc0809.lst) TABS(2) OBJECT(.\Objects\adc0809.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          /*
+   3          sbit ADDA=P2^2;
+   4          sbit ADDB=P2^3;
+   5          sbit ADDC=P2^4;                 //可选地址 CBA
+   6          */
+   7          
+   8          
+   9          //sbit ALE=P3^4;                  //地址锁存信号
+  10          sbit START=P3^5;                //AD转换启动信号
+  11          sbit EOC=P3^6;                  //AD转换结束信号
+  12          sbit OE=P3^2;               //数据输出允许信号
+  13          sbit CLOCK=P3^3;                //时钟信号
+  14          
+  15          unsigned int ADC0809_Read(){
+  16   1        unsigned int ADC_Result=0;
+  17   1        START = 0;
+  18   1        START = 1;
+  19   1        START = 0;
+  20   1        while(EOC==0);
+  21   1        OE=1;
+  22   1        ADC_Result=P1;
+  23   1        OE=0;
+  24   1        return ADC_Result;
+  25   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     21    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

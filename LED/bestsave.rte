@@ -1,0 +1,296 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00066 
+   (rule
+   )
+   )
+   (Net #00093 
+   (rule
+   )
+   (wire (path TOP 25400  0 1778000 0 1968500 -1778000 1968500
+     -1778000 1778000)
+    (connect (terminal pin U1-9) (terminal pin U1-2))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 25400  2540000 -762000 2540000 513587 1397000 513587
+     1397000 1778000)
+    (connect (terminal pin MCU-19) (terminal pin EEPROM-3))
+   )
+   (wire (path TOP 25400  889000 2540000 889000 2794000 -1524000 2794000)
+    (connect (terminal pin EEPROM-6) (terminal pin CLOCK-3))
+   )
+   (wire (path BOT 25400  635000 1778000 635000 1397000 0 1397000)
+    (connect (terminal pin EEPROM-0) (terminal pin LCD1-0))
+   )
+   (wire (path BOT 25400  889000 1778000 889000 2540000)
+    (connect (terminal pin EEPROM-1) (terminal pin EEPROM-6))
+   )
+   (wire (path TOP 25400  0 1397000 0 1587500 -508000 1587500
+     -508000 1397000)
+    (connect (terminal pin LCD1-0) (terminal pin LCD1-2))
+   )
+   (wire (path BOT 25400  889000 1778000 635000 1778000)
+    (connect (terminal pin EEPROM-1) (terminal pin EEPROM-0))
+   )
+   (wire (path TOP 25400  889000 1778000 1143000 1778000)
+    (connect (terminal pin EEPROM-1) (terminal pin EEPROM-2))
+   )
+   (wire (path TOP 25400  1397000 1778000 1143000 1778000)
+    (connect (terminal pin EEPROM-3) (terminal pin EEPROM-2))
+   )
+   )
+   (Net P00 
+   (rule
+   )
+   (wire (path BOT 25400  -2032000 762000 -2032000 1397000 -1524000 1397000)
+    (connect (terminal pin MCU-38) (terminal pin LCD1-6))
+   )
+   (wire (path TOP 25400  -2032000 762000 -2032000 635000 -2921000 635000)
+    (connect (terminal pin MCU-38) (terminal pin RP1-1))
+   )
+   )
+   (Net P01 
+   (rule
+   )
+   (wire (path TOP 25400  -1778000 762000 -1778000 381000 -2921000 381000)
+    (connect (terminal pin MCU-37) (terminal pin RP1-2))
+   )
+   (wire (path BOT 25400  -1524000 1143000 -1778000 1143000 -1778000 762000)
+    (connect (terminal pin LCD1-7) (terminal pin MCU-37))
+   )
+   )
+   (Net P02 
+   (rule
+   )
+   (wire (path TOP 25400  -1524000 762000 -1524000 127000 -2921000 127000)
+    (connect (terminal pin MCU-36) (terminal pin RP1-3))
+   )
+   (wire (path BOT 25400  -1270000 1143000 -1270000 952500 -1524000 952500
+     -1524000 762000)
+    (connect (terminal pin LCD1-8) (terminal pin MCU-36))
+   )
+   )
+   (Net P03 
+   (rule
+   )
+   (wire (path TOP 25400  -1270000 762000 -1270000 -127000 -2921000 -127000)
+    (connect (terminal pin MCU-35) (terminal pin RP1-4))
+   )
+   (wire (path BOT 25400  -1016000 1143000 -1016000 952500 -1143000 952500
+     -1143000 762000 -1270000 762000)
+    (connect (terminal pin LCD1-9) (terminal pin MCU-35))
+   )
+   )
+   (Net P04 
+   (rule
+   )
+   (wire (path TOP 25400  -1016000 762000 -1016000 -381000 -2921000 -381000)
+    (connect (terminal pin MCU-34) (terminal pin RP1-5))
+   )
+   (wire (path BOT 25400  -762000 1143000 -762000 889000 -1016000 889000
+     -1016000 762000)
+    (connect (terminal pin LCD1-10) (terminal pin MCU-34))
+   )
+   )
+   (Net P05 
+   (rule
+   )
+   (wire (path TOP 25400  -762000 762000 -762000 -635000 -2921000 -635000)
+    (connect (terminal pin MCU-33) (terminal pin RP1-6))
+   )
+   (wire (path BOT 25400  -508000 1143000 -508000 952500 -635000 952500
+     -635000 762000 -762000 762000)
+    (connect (terminal pin LCD1-11) (terminal pin MCU-33))
+   )
+   )
+   (Net P06 
+   (rule
+   )
+   (wire (path TOP 25400  -508000 762000 -508000 508000 -635000 508000
+     -635000 -889000 -2921000 -889000)
+    (connect (terminal pin MCU-32) (terminal pin RP1-7))
+   )
+   (wire (path BOT 25400  -254000 1143000 -254000 889000 -508000 889000
+     -508000 762000)
+    (connect (terminal pin LCD1-12) (terminal pin MCU-32))
+   )
+   )
+   (Net P07 
+   (rule
+   )
+   (wire (path TOP 25400  -254000 762000 -254000 508000 -381000 508000
+     -381000 -1143000 -2921000 -1143000)
+    (connect (terminal pin MCU-31) (terminal pin RP1-8))
+   )
+   (wire (path BOT 25400  0 1143000 0 889000 -127000 889000
+     -127000 762000 -254000 762000)
+    (connect (terminal pin LCD1-13) (terminal pin MCU-31))
+   )
+   )
+   (Net P20 
+   (rule
+   )
+   (wire (path BOT 25400  2540000 762000 2540000 2540000 1397000 2540000)
+    (connect (terminal pin MCU-20) (terminal pin EEPROM-4))
+   )
+   )
+   (Net P21 
+   (rule
+   )
+   (wire (path BOT 25400  2286000 762000 2286000 2026861 1143000 2026861
+     1143000 2540000)
+    (connect (terminal pin MCU-21) (terminal pin EEPROM-5))
+   )
+   )
+   (Net P22 
+   (rule
+   )
+   )
+   (Net P23 
+   (rule
+   )
+   )
+   (Net P24 
+   (rule
+   )
+   )
+   (Net P25 
+   (rule
+   )
+   (wire (path TOP 25400  -1016000 1397000 -1016000 1587500 -1714500 1587500
+     -1714500 889000 1270000 889000 1270000 762000)
+    (connect (terminal pin LCD1-4) (terminal pin MCU-25))
+   )
+   )
+   (Net P26 
+   (rule
+   )
+   (wire (path TOP 25400  -762000 1397000 -762000 1651000 1397000 1651000
+     1397000 571500 1016000 571500 1016000 762000)
+    (connect (terminal pin LCD1-3) (terminal pin MCU-26))
+   )
+   )
+   (Net P27 
+   (rule
+   )
+   (wire (path BOT 25400  -1270000 1397000 -1270000 1587500 -2159000 1587500
+     -2159000 571500 762000 571500 762000 762000)
+    (connect (terminal pin LCD1-5) (terminal pin MCU-27))
+   )
+   )
+   (Net P30 
+   (rule
+   )
+   )
+   (Net P31 
+   (rule
+   )
+   )
+   (Net P32 
+   (rule
+   )
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path BOT 25400  -2286000 762000 -2286000 1651000 -317500 1651000)
+    (connect (terminal pin MCU-39) (terminal wire))
+   )
+   (wire (path BOT 25400  635000 2540000 635000 2286000 444500 2286000
+     444500 1651000 -317500 1651000)
+    (connect (terminal pin EEPROM-7) (terminal wire))
+   )
+   (wire (path TOP 25400  -2286000 762000 -2540000 762000 -2540000 889000
+     -2921000 889000)
+    (connect (terminal pin MCU-39) (terminal pin RP1-0))
+   )
+   (wire (path BOT 25400  -254000 1397000 -317500 1397000 -317500 1651000)
+    (connect (terminal pin LCD1-1) (terminal wire))
+   )
+   (wire (path TOP 25400  -2921000 889000 -3175000 889000 -3175000 888999
+     -7000448 888999 -7000448 889000 -7493000 889000)
+    (connect (terminal pin RP1-0) (terminal pin R1-0))
+   )
+   )
+  )
+ )
